@@ -1,0 +1,23 @@
+<form class="form" [formGroup] = "studentForm" >
+    <h1>new Student</h1>
+    <div class="form-controle" >
+      <label for="name">Student Name</label>
+      <input type="text" formControlName = "name" [formNoValidate] = "true" />
+    </div>
+    <div class="form-controle">
+      <label for="id">Student ID</label>
+      <input type="number"  formControlName = "id" [formNoValidate] = "true"/>
+    </div>
+
+    <div class="form-controle">
+      <label for="gpa">Student gpa</label>
+      <input type="number"  formControlName = "gpa" [formNoValidate] = "true"/>
+    </div>
+    <div class="form-controle">
+      <label for="date">Student BirthDate</label>
+      <input type="text"  formControlName = "birth" [formNoValidate] = "true"/>
+    </div>
+    <div class="button">
+      <button (click)="getdata()">insert data</button>
+    </div>ٍٍ
+  </form>

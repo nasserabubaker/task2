@@ -1,0 +1,10 @@
+<form class="form" [formGroup] = "studentForm" >
+    <h1>Delete Student</h1>
+    <div class="form-controle" >
+        <label for="oldid">Student ID for Delete</label>
+        <input type="string" formControlName = "name" [formNoValidate] = "true" />
+      </div>
+    <div class="button">
+      <button (click)="getdata()">Delete Student</button>
+    </div>
+  </form>

@@ -1,0 +1,26 @@
+.form{
+    float: left;
+    height: fit-content;
+}
+.form-controle >label{
+    font-size: 30px;
+    min-width: 100px;
+    max-width: 100px;
+}
+.form-controle >input{
+    background-color: white;
+    height: 30px;
+    margin-left: 10px  ;
+
+
+}
+.form-controle{
+    margin: 20px auto;
+}
+.button > button{
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 20%;
+}

@@ -1,0 +1,27 @@
+<form class="form" [formGroup] = "studentForm" >
+    <h1>Edit Student</h1>
+    <div class="form-controle" >
+        <label for="oldid">Student ID for edit</label>
+        <input type="text" formControlName = "oldid" [formNoValidate] = "true" />
+      </div>
+    <div class="form-controle" >
+      <label for="name">new Student Name</label>
+      <input type="text" formControlName = "name" [formNoValidate] = "true" />
+    </div>
+    <div class="form-controle">
+      <label for="id">new Student ID</label>
+      <input type="number"  formControlName = "id" [formNoValidate] = "true"/>
+    </div>
+
+    <div class="form-controle">
+      <label for="gpa">new Student gpa</label>
+      <input type="number"  formControlName = "gpa" [formNoValidate] = "true"/>
+    </div>
+    <div class="form-controle">
+      <label for="date">new Student BirthDay</label>
+      <input type="text"  formControlName ="date" [formNoValidate] = "true"/>
+    </div>
+    <div class="button">
+      <button (click)="getdata()">Update Student</button>
+    </div>
+  </form>
